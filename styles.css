@@ -16,8 +16,9 @@ body {
   padding: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  min-height: 100vh;  /* Garante que o body ocupe pelo menos 100% da altura da tela */
+  overflow: auto;  /* Permite rolagem */
 }
 
 /* Estilo do container central */
@@ -28,6 +29,7 @@ body {
   width: 100%;
   max-width: 800px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: auto;  /* Permite rolagem dentro do container se necessário */
 }
 
 /* Estilo do cabeçalho */
@@ -53,6 +55,7 @@ header h2 {
   color: #ddd;
   text-align: justify;
   margin-bottom: 15px;
+  line-height: 1.6;  /* Aumenta o espaçamento entre as linhas */
 }
 
 .story h3 {
